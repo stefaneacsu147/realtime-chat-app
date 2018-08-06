@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WebChat</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+  <link href="./style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <h2>
+    <box-icon class="message-rounded" name='message-rounded' animation='tada'></box-icon> Real Time Web Chat</h2>
+  <div id="mario-chat">
+    <div id="chat-window">
+      <div id="output"></div>
+      <div id="feedback"></div>
+    </div>
+    <input id="handle" type="text" placeholder="Enter your username..." />
+    <input id="message" type="text" placeholder="Type a message..." />
+    <button id="send">Send</button>
+  </div>
+  <script src="./chat.js"></script>
+  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+</body>
+
+</html>
